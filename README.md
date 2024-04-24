@@ -1,43 +1,37 @@
 # MLLM_Factory
 
-Multi-modal model training are very sensitive to their training strategy and settings, to make full use of opensource facility works such as LLaVA, QwenVL etc, I orgainized some SOTA multi modal LLM implementation here. It able to pretrain and finetune many kinds of Vision Encoders & LLMs as well as different vision-llm adaptors.
-Current supported model arch design is:
+Multi-modal model training is very sensitive to its training strategy and settings. To make full use of open-source frameworks such as LLaVA, QwenVL, etc., I have organized some state-of-the-art multi-modal LLM implementations here. This repository is able to pretrain and fine-tune various types of Vision Encoders & LLMs, as well as different vision-LLM adaptors.
+The currently supported model architectures are:
 
-- LLaVA 1.5;
-- LLaVA 1.6;
-- Qwen VL;
-- MiniGemini;
-- Flamingo;
-- MiniCPM;
-- Vary;
+- LLaVA 1.5
+- LLaVA 1.6
+- Qwen VL
+- MiniGemini
+- Flamingo
+- MiniCPM
+- Vary
 
-For large language models, here are supported one:
+For large language models, the following ones are supported:
 
-- Qwen1.5 series;
-- Llama3 series;
+- Qwen1.5 series
+- Llama3 series
 
-The bridge between LLM and Vision encoders, we supported many different implementations:
+To bridge the gap between LLM and Vision encoders, we have supported various implementations:
 
-- LLaVA like MLP adaptors;
-- QwenVL like Resampler;
-- Perceiver Resampler;
-- Complicated Perceiver Resamper;
+- LLaVA-like MLP adaptors
+- QwenVL-like Resampler
+- Perceiver Resampler
+- Complicated Perceiver Resampler
 
-Be noted that, these combinations between different Vision Encoder && Adaptors are quite sensetive, you could be easily diconvergence at anytime if you aren't have a full experiences in MLLM training. But don't warry, that's the reason why we are here.
+Please note that the combinations between different Vision Encoders and Adaptors are quite sensitive. You may easily encounter divergence if you don't have sufficient experience in MLLM training. But don't worry, that's why we are here to help.
+The ultimate goal of this repository is:
 
-The utlimate goal of this repo is:
-
-> Makeing MLLM pretraining && finetune can be easily reimplemented, democrization MLLM training to anyone!
-
+> To make MLLM pretraining and fine-tuning easily re-implementable, democratizing MLLM training for everyone!
 
 ## Quick Start
 
-The whole project architecture are merely same as LLaVA, to the best of understanding the project, we choose kept it as simple as possible, we didn't event change the package name in case anyone PR their forks from original LLaVA repo!
-
-You can follow original LLaVA installation guide to setup **MLLM_Factory**.
-
+The overall project architecture is almost the same as LLaVA. To better understand the project, we have kept it as simple as possible. We haven't even changed the package name in case anyone wants to contribute their forks from the original LLaVA repository!
+You can follow the original LLaVA installation guide to set up MLLM_Factory.
 
 ## Status
-
-Currently the code are on the edge of release, please star and watch for the quickist updates!
-
+Currently, the code is on the verge of release. Please star and watch for the quickest updates!
